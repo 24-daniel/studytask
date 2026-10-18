@@ -23,7 +23,7 @@ index.html   struktur halaman
 style.css    tampilan
 script.js    logika (fungsi murni + antarmuka)
 tests/       uji unit
-docs/        proposal dan gambar
+docs/        Proposal_Tugas_1_StudyTask.docs
 ```
 
 Nama: Daniel Mikael Nicolas Sianturi | NIM: 11S24037
