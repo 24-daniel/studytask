@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudyTask - Pencatat Tugas Kuliah</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <h1>StudyTask</h1>
+  <p class="sub">Pencatat tugas kuliah sederhana (dibuat dengan bantuan AI generatif)</p>
+
+  <form id="taskForm" novalidate>
+    <input id="title" type="text" placeholder="Judul tugas" maxlength="80" required>
+    <input id="course" type="text" placeholder="Mata kuliah" maxlength="40">
+    <input id="deadline" type="date" required>
+    <select id="priority">
+      <option value="rendah">Prioritas rendah</option>
+      <option value="sedang" selected>Prioritas sedang</option>
+      <option value="tinggi">Prioritas tinggi</option>
+    </select>
+    <button type="submit">Tambah</button>
+  </form>
+  <p id="error" class="error" role="alert"></p>
+
+  <div class="toolbar">
+    <select id="filter">
+      <option value="semua">Semua</option>
+      <option value="aktif">Belum selesai</option>
+      <option value="selesai">Selesai</option>
+    </select>
+    <span id="stats"></span>
+  </div>
+
+  <ul id="list"></ul>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
